@@ -50,9 +50,14 @@ Ensure that Python is installed. The script has been tested with Python 3.11.7 a
 
 ---
 
-todo: entrar no youtube e ver oq ele instala
-explicar o que foi adicionado extra
-abrir o medium e colocar ele no readme tbm
-instruções pra executar
-snake_game_tkinter.py jogar o jogo
+To run the agent:
+```bash
+   python agent_stats.py
+```
+
+To play the game
+```bash
+   python snake_game.py
+```
+
 

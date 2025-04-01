@@ -19,16 +19,16 @@ LR = 0.001
 class Agent:
     def __init__(self):
         self.n_games = 0
-        self.epsilon = 0  # randomness
-        self.gamma = 0.9  # discount rate
-        self.memory = deque(maxlen=MAX_MEMORY)  # popleft()
-        self.model = Linear_QNet(11, 256, 3)
-        self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma)
+        self.epsilon = 0  # randomness (exploration rate)
+        self.gamma = 0.9  # discount rate for future rewards
+        self.memory = deque(maxlen=MAX_MEMORY)  # stores experiences for replay
+        self.model = Linear_QNet(11, 256, 3) # Neural network for Q-value approximation
+        self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma) # Trainer for the model
         self.action_counts = [0, 0, 0]  # Tracks left, right, straight actions
         self.q_values = []  # Stores Q-values
         self.rewards = []  # Stores rewards
         self.losses = []  # Tracks model loss
-        self.heatmap = np.zeros((24, 32))  # 480/20=24 rows, 640/20=32 columns
+        self.heatmap = np.zeros((24, 32))  # Grid to track visited areas 480/20=24 rows, 640/20=32 columns
 
     def get_state(self, game):
         head = game.snake[0]

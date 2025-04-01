@@ -16,7 +16,7 @@ Soon: **Minimax** and **Genetic Algorithms**
 
 ## 📌 Usage
 The Jupyter Notebook `search.ipynb` contains Python implementations of these algorithms. Open it in Google Colab:  
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1DO_90wiZLdB8Q02Ez5bFZtDiWQ_l9_Gn#scrollTo=lGXcgNYQ_fTo))
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DO_90wiZLdB8Q02Ez5bFZtDiWQ_l9_Gn#scrollTo=lGXcgNYQ_fTo)
 
 ## 📖 References
 - **[Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu/)**
